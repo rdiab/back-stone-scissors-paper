@@ -6,14 +6,12 @@ import com.games.back.stone.scissors.paper.driving.controllers.models.GameReques
 import com.games.back.stone.scissors.paper.driving.controllers.models.GameResultDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin // Needs to be removed if deployed with security. Only needed when testing locally
 @RequestMapping("/game/stone-scissors-paper/")
 public class GameAdapter {
   private final GameServicePort gameServicePort;
