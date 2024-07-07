@@ -37,13 +37,13 @@ public class GameService implements GameServicePort {
 
     switch (userMove) {
       case STONE -> {
-        return computerMove == MoveEnum.PAPER ? ResultEnum.WIN : ResultEnum.LOSE;
+        return computerMove == MoveEnum.PAPER ? ResultEnum.LOSE : ResultEnum.WIN;
       }
       case PAPER -> {
-        return computerMove == MoveEnum.SCISSORS ? ResultEnum.WIN : ResultEnum.LOSE;
+        return computerMove == MoveEnum.SCISSORS ? ResultEnum.LOSE : ResultEnum.WIN;
       }
       case SCISSORS -> {
-        return computerMove == MoveEnum.STONE ? ResultEnum.WIN : ResultEnum.LOSE;
+        return computerMove == MoveEnum.STONE ? ResultEnum.LOSE : ResultEnum.WIN;
       }
       default -> {
         return ResultEnum.DRAW; // This line will never be reached
