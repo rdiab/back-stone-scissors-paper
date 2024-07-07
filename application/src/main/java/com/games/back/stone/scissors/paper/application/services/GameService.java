@@ -1,4 +1,4 @@
-package com.games.back.stone.scissors.paper.application;
+package com.games.back.stone.scissors.paper.application.services;
 
 import com.games.back.stone.scissors.paper.application.ports.driving.GameServicePort;
 import com.games.back.stone.scissors.paper.domain.GameResult;
