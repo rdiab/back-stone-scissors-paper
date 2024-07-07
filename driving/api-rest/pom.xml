@@ -14,4 +14,20 @@
   <packaging>jar</packaging>
   <name>back-stone-scissors-paper-api-rest</name>
 
+  <dependencies>
+    <dependency>
+      <groupId>com.games</groupId>
+      <artifactId>back-stone-scissors-paper-application</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct</artifactId>
+      <version>1.5.5.Final</version>
+    </dependency>
+  </dependencies>
+
 </project>
